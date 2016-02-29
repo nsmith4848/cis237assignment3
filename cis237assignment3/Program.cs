@@ -10,6 +10,30 @@ namespace cis237assignment3
     {
         static void Main(string[] args)
         {
-        }
-    }
+            UserInterface userInterface = new UserInterface();
+            DroidCollection droidCollection = new DroidCollection();
+            bool exitBool = false;
+            while(exitBool == false)
+            {
+                int choice = userInterface.MainMenu();
+
+                switch (choice)
+                    {
+                    case 1:
+                        AddDroid();
+                        break;
+
+                    case 2:
+                        PrintDroids();
+                        break;
+                    case 3:
+                        exitBool = true;
+                        break;
+                    default:
+                        userInterface.PrintError();
+                        break;
+                }
+            }
+        }        
+    }    
 }
