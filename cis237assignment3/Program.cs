@@ -21,11 +21,12 @@ namespace cis237assignment3
                     {
                     case 1:
                         Droid inputDroid = userInterface.InputDroid();
-
+                        droidCollection.AddDroid(inputDroid);
                         break;
 
                     case 2:
-                        
+                        string output = droidCollection.ToString();
+                        userInterface.PrintAllOutput(output);
                         break;
                     case 3:
                         exitBool = true;

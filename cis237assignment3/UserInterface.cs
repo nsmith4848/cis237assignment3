@@ -320,5 +320,10 @@ namespace cis237assignment3
                 return null;
             }
         }
+
+        public void PrintAllOutput(string output)
+        {
+            Console.WriteLine(output);
+        }
     }
 }
