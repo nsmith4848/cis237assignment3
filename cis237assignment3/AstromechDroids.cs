@@ -15,7 +15,7 @@ namespace cis237assignment3
         private const decimal costPerShipDecimal = 67.50m;
 
         public AstromechDroids(string material, string model, string color, bool toolBox, bool computerConnection, bool arm, bool fireExtinguisher, int numberOfShips)
-            : base(material,model,color,toolBox,computerConnection,arm)
+            : base(material, model, color, toolBox, computerConnection, arm)
         {
             this.fireExtinguisherBool = fireExtinguisher;
             this.numberOfShipsInt = numberOfShips;
@@ -30,16 +30,14 @@ namespace cis237assignment3
 
             base.baseCostDec += numberOfShipsInt * costPerShipDecimal;
         }
-
         public override string ToString()
         {
-            private string addOn = this.numberOfShipsInt * costPerShipDecimal;
-            if(fireExtinguisherBool == true)
-            {
-                addOn += " includes a fire extinguisher";
-            }
-
-        return base.ToString() + addOn;
+            string addOn = (numberOfShipsInt * costPerShipDecimal).ToString();
+            if (fireExtinguisherBool == true) addOn += " includes a fire extinguisher";
+            return base.ToString() + addOn;
         }
+
+            
+            
     }
 }

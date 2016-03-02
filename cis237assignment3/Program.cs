@@ -20,11 +20,12 @@ namespace cis237assignment3
                 switch (choice)
                     {
                     case 1:
-                        AddDroid();
+                        Droid inputDroid = userInterface.InputDroid();
+
                         break;
 
                     case 2:
-                        PrintDroids();
+                        
                         break;
                     case 3:
                         exitBool = true;

@@ -9,5 +9,10 @@ namespace cis237assignment3
     class DroidCollection
     {
         Droid[] droids = new Droid[100];
+
+        public void AddDroid()
+        {
+
+        }
     }
 }
